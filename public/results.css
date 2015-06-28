@@ -1,0 +1,22 @@
+.Container {
+	padding: 40px; 
+	text-align: center;
+}
+
+.posterContainer {
+	width: 945px;
+	margin: 0 auto;
+}
+
+.poster{
+	float: right;
+	padding: 10px;
+	margin: 15px;
+}
+
+.poster-img {
+	height: 375px;
+	width: 240px;
+	margin-bottom: 15px;
+}
+

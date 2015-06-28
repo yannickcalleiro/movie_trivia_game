@@ -1,0 +1,25 @@
+<link rel="stylesheet" type="text/css" href="results.css">
+<h1>IMDB Search Results:</h1>
+<br>
+<div class="Container"> 
+<text>Bonus question: Which movie was made in <%=@movie_year_answer.year%>? Please select a movie.<text>
+	<br>
+	 <div class="posterContainer"> 	
+		<% @results.each do |movie| %>
+		 <div class="poster"> 
+			 <img class="poster-img" src= "<%= movie.poster %>">
+			 	<form action="/select_answer" method="POST">
+	  				 <button type="submit" name="operation" value="<%= movie.id%>">Select</button>
+   				</form>
+		</div>
+	<br>
+	 	
+	<br>
+
+		<% end %>
+	</div>
+</div>
+
+
+	
+
